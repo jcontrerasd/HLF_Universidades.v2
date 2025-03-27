@@ -82,5 +82,5 @@ cd chaincodes/registroAlumnos/chaincode-javascript
 rm -rf node_modules package-lock.json
 npm install
 
-cd ../../..
+cd HLF_Universidades
 ./hlf_universidades.sh 
