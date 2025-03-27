@@ -1,0 +1,49 @@
+{
+    "name": "test-network-org1",
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org1",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "Org1": {
+            "mspid": "MadridMSP",
+            "peers": [
+                " peer0.madrid.universidades.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org1.universidades.com"
+            ]
+        }
+    },
+    "peers": {
+        " peer0.madrid.universidades.com": {
+            "url": "grpcs://localhost:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICVzCCAf6gAwIBAgIRAInDBSDTr2XPDmVnqxPAo9IwCgYIKoZIzj0EAwIwdjEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xGTAXBgNVBAoTEG9yZzEuZXhhbXBsZS5jb20xHzAdBgNVBAMTFnRs\nc2NhLm9yZzEuZXhhbXBsZS5jb20wHhcNMjQwMzA1MTMyNTAwWhcNMzQwMzAzMTMy\nNTAwWjB2MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UE\nBxMNU2FuIEZyYW5jaXNjbzEZMBcGA1UEChMQb3JnMS5leGFtcGxlLmNvbTEfMB0G\nA1UEAxMWdGxzY2Eub3JnMS5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49\nAwEHA0IABJBz9RJ2TxLqUyRqy0X0HQzDZufuc6nbfMhQc1O0LP4KfR4xiv69M6s3\nl3n3qnQEQMCCSyF+3lfDCvsiBa/p8/OjbTBrMA4GA1UdDwEB/wQEAwIBpjAdBgNV\nHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zApBgNV\nHQ4EIgQgIxYdirqnglqi786toWcQVq4L45UzQXAbVd8wUk/PfIgwCgYIKoZIzj0E\nAwIDRwAwRAIgBi+mTgQJl61bcObL+Lvbb3OAT7c/1PM/mAgZjaw9xnwCICqQuVBR\nx7KOVTy5nOUKLLQP+WHqPn3Mg0wCUIB7nGyC\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": " peer0.madrid.universidades.com",
+                "hostnameOverride": " peer0.madrid.universidades.com"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "ca.org1.universidades.com": {
+            "url": "https://localhost:7054",
+            "caName": "ca-org1",
+            "tlsCACerts": {
+                "pem": ["-----BEGIN CERTIFICATE-----\nMIICUDCCAfegAwIBAgIQG2gsEn28CocvGe1iGYWEFzAKBggqhkjOPQQDAjBzMQsw\nCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy\nYW5jaXNjbzEZMBcGA1UEChMQb3JnMS5leGFtcGxlLmNvbTEcMBoGA1UEAxMTY2Eu\nb3JnMS5leGFtcGxlLmNvbTAeFw0yNDAzMDUxMzI1MDBaFw0zNDAzMDMxMzI1MDBa\nMHMxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1T\nYW4gRnJhbmNpc2NvMRkwFwYDVQQKExBvcmcxLmV4YW1wbGUuY29tMRwwGgYDVQQD\nExNjYS5vcmcxLmV4YW1wbGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE\ng+tKTGD1+HmGzAG3irhviNofaC04Jj088wCqKB4OoEl1vtBYjPH/E6eV7NSGPpSK\nnBClS9TbC5Oi9kRsq9fK36NtMGswDgYDVR0PAQH/BAQDAgGmMB0GA1UdJQQWMBQG\nCCsGAQUFBwMCBggrBgEFBQcDATAPBgNVHRMBAf8EBTADAQH/MCkGA1UdDgQiBCAV\nmmMDZxHOvCTDVqw57urQZfSo+VjUPvfiBGveR36nVTAKBggqhkjOPQQDAgNHADBE\nAiBxg5BIFYlVZqOXWoHuDqgKVbmmSDgMWfjBfyXo78yy0wIgdkanTq18UyWQGvOD\nlnCuvpQL6wMQQ1os7b+oLjlGnM0=\n-----END CERTIFICATE-----\n"]
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}

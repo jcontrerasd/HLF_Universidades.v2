@@ -1,0 +1,19 @@
+test:
+    name: basic-contract-benchmark
+    description: test benchmark
+    workers:
+      type: local
+      number: 3
+    rounds:
+      - label: readAsset
+        description: Read asset benchmark
+        txNumber: 300
+        rateControl: 
+          type: fixed-load
+          opts:
+            transactionLoad: 2
+        workload:
+          module: workload/readAsset.js
+          arguments:
+            assets: 10
+            contractId: basic

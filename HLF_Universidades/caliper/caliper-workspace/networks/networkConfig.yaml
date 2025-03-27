@@ -1,0 +1,23 @@
+name: Calier test
+version: "2.0.0"
+
+caliper:
+  blockchain: fabric
+
+channels:
+  - channelName: mychannel
+    contracts:
+    - id: basic
+
+organizations:
+  - mspid: MadridMSP
+    identities:
+      certificates:
+      - name: 'User1'
+        clientPrivateKey:
+          path: '../../organizations/peerOrganizations/madrid.universidades.com/users/User1@madrid.universidades.com/msp/keystore/priv_sk'
+        clientSignedCert:
+          path: '../../organizations/peerOrganizations/madrid.universidades.com/users/User1@madrid.universidades.com/msp/signcerts/User1@madrid.universidades.com-cert.pem'
+    connectionProfile:
+      path: '../connection-org1.yaml'
+      discover: true
