@@ -5,6 +5,14 @@
 .nvm/
 .ssh/
 .vscode-server/
+HLF_Universidades/bin/
+HLF_Universidades/organizations/peerOrganizations/
+HLF_Universidades/organizations/ordererOrganizations/
+HLF_Universidades/organizations/fabric-ca/ordererOrg/
+HLF_Universidades/organizations/fabric-ca/org1/
+HLF_Universidades/organizations/fabric-ca/org2/
+HLF_Universidades/organizations/fabric-ca/org3/
+HLF_Universidades/channel-artifacts/
 pln/
 snap/
 .bash_history
